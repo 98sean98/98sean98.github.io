@@ -14,7 +14,7 @@ app.locals.moment = require('moment');
 
 // ===== ROUTES =====
 app.get('/'), function(req, res) {
-  res.render('index.html');
+  res.send('landing');
 }
 
 
