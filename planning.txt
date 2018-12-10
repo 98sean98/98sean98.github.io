@@ -1,0 +1,27 @@
+1. Landing page
+- top navigation bar (use logos)
+  - Projects
+  - Kerbal Space Program
+  - Robomaster
+  - BrainBuilder
+  - Music
+- fixed bottom navigation bar
+  - Resume
+  - Contact
+
+- work
+- education
+
+
+2. Projects
+- rctechclub
+- 3D printing journeys
+
+4. Robomaster
+- mechanical team member
+- aerial robot
+
+5. BrainBuilder
+- nov 2016 to aug 2018 tenure
+- students
+- comprehensive project
