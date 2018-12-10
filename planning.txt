@@ -1,5 +1,7 @@
 1. Landing page
-- top navigation bar (use logos)
+- background with text
+
+- navigation area (use logos)
   - Projects
   - Kerbal Space Program
   - Robomaster
