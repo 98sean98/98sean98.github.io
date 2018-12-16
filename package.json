@@ -1,0 +1,22 @@
+{
+  "name": "98sean98.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/98sean98/98sean98.github.io.git"
+  },
+  "author": "Sean Chok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/98sean98/98sean98.github.io/issues"
+  },
+  "homepage": "https://github.com/98sean98/98sean98.github.io#readme",
+  "dependencies": {
+    "jquery-parallax.js": "^1.5.0"
+  }
+}
