@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+
+.title{
+  position: absolute;
+}
+
+main {
+  max-width: 90%;
+  margin: auto;
+}
+
+section {
+  /* temporary filler text */
+  margin: 2em 0.5em;
+  color: white;
+}
+
+.parallax-window {
+  min-height: 25%;
+  background: transparent;
+}
