@@ -9,11 +9,21 @@ body {
   background-color: black;
 }
 
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5vh;
+  overflow: auto;
+}
+
 footer {
-  height: 5%;
+  height: 5vh;
   width: 100%;
   position: fixed;
   bottom: 0%;
+  overflow: hidden;
 }
 
 a {
@@ -22,15 +32,16 @@ a {
 
 .title {
   background-image: url(../../assets/4k_pics/mars.jpg);
-  min-height: 100vh;
+  min-height: 95vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 36px; /* fall back */
-  font-size: 4vw;
+  font-size: 4vh;
   letter-spacing: 0.25em;
   text-align: center;
+  margin: 1% auto;
 }
 
 .title-text {
@@ -41,6 +52,76 @@ a {
   transform: translate(-50%, -30%);
 }
 
+.navigation {
+  height: 95vh;
+  box-sizing: border-box;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url(../../assets/4k_pics/earth_nightlights.png);
+}
+
+.areas {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+
+.area {
+  font-size: 30px;
+  font-size: 2vh;
+  display: flex;
+  width: 50%;
+  flex-grow: 1;
+}
+
+@media screen
+  and (min-device-width: 200px)
+  and (max-device-width: 850px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .area {
+      width: auto;
+    }
+}
+@media screen
+  and (min-device-width: 200px)
+  and (max-device-width: 850px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .area {
+      width: 50%;
+    }
+    .area > .description {
+      font-size: 3vh;
+    }
+}
+@media screen
+  and (min-device-width: 600px)
+  and (max-device-width: 4000px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .area {
+      width: 50%;
+    }
+}
+
+.area > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  float: left;
+  margin: 1%;
+}
+
+.area > .description {
+  display: inline-block;
+  margin: 1%;
+  margin-left: 2%;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .contacts-button {
   background-color: white;
   color: black;
@@ -49,5 +130,5 @@ a {
   margin-bottom: 10px;
   border-radius: 15px;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 2.8vh;
 }
