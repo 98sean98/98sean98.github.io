@@ -1,23 +1,53 @@
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: black;
 }
 
-.title{
+footer {
+  height: 5%;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  background-image: url(../../assets/4k_pics/mars.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 36px; /* fall back */
+  font-size: 4vw;
+  letter-spacing: 0.25em;
+  text-align: center;
+}
+
+.title-text {
+  margin: 0;
   position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 
-main {
-  max-width: 90%;
+.contacts-button {
+  background-color: white;
+  color: black;
+  width: 520px;
   margin: auto;
-}
-
-section {
-  /* temporary filler text */
-  margin: 2em 0.5em;
-  color: white;
-}
-
-.parallax-window {
-  min-height: 25%;
-  background: transparent;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2.5vh;
 }
