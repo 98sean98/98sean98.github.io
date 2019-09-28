@@ -26,6 +26,3 @@ jobs:
           npm run build
         env:
           CI: true
-      - name: gh-pages deploy
-        run: |
-          npm run deploy
