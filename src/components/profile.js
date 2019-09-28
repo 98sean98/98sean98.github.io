@@ -3,6 +3,28 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from '../design/theme';
 import drone from '../images/drone_low_saturation.jpg';
 
+import { Grid } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAt, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import posed from 'react-pose';
+
+const iconSizes = '2x';
+
+const IconBox = posed.div({
+  hoverable: true,
+  pressable: true,
+  init: {
+    scale: 1,
+  },
+  hover: {
+    scale: 1.2,
+  },
+  press: {
+    scale: 1.1,
+  },
+});
+
 class Profile extends Component {
   state = {
     tag: this.props.profile.tags[0],
@@ -18,6 +40,23 @@ class Profile extends Component {
     }, delay);
   }
 
+  generateIconBox = (link, icon) => {
+    const IconLink = styled.a`
+      text-decoration: none;
+      color: ${theme.color};
+    `;
+
+    return (
+      <Grid item xs={4}>
+        <IconBox>
+          <IconLink href={link} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon style={{ width: '100%' }} icon={icon} size={iconSizes} />
+          </IconLink>
+        </IconBox>
+      </Grid>
+    );
+  };
+
   render() {
     const ProfileBody = styled.div`
       height: 96vh;
@@ -29,14 +68,13 @@ class Profile extends Component {
       background-blend-mode: multiply;
     `;
 
-    const Container = styled.div`
+    const TextContainer = styled.div`
       background: ${theme.backgroundColor};
       border-radius: 10px;
-      max-width: calc(350px + 8vw);
-      margin: auto;
-      margin-top: 12vh;
+      margin: auto 2vw;
+      margin-top: 8vh;
       padding: 1vmin;
-      font-size: calc(24px + 2vmax);
+      font-size: calc(20px + 2vmax);
     `;
 
     const Tag = styled.div`
@@ -49,19 +87,42 @@ class Profile extends Component {
       margin: 3vh 2vw;
     `;
 
+    const IconContainer = styled.div`
+      width: 40vw;
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+      left: 50%
+      transform: translate(-50%, 0);
+    `;
+
+    const DownwardsIcon = styled(FontAwesomeIcon)`
+      color: ${theme.color};
+      margin: 0.5vh auto;
+    `;
+
     const { profile } = this.props;
     const { tag } = this.state;
 
     return (
       <ProfileBody>
-        <Container>
+        <TextContainer>
           <div>Hi | I'm </div>
           <div>{profile.myName}</div>
-          <ThemeProvider theme={{ color: 'primary' }}>
-            <Tag>{tag}</Tag>
-          </ThemeProvider>
+          <Tag>{tag}</Tag>
           <Description>{profile.description}</Description>
-        </Container>
+        </TextContainer>
+
+        <ThemeProvider theme={{ color: 'tertiary' }}>
+          <IconContainer>
+            <Grid container spacing={0}>
+              {this.generateIconBox(profile.github, faGithub)}
+              {this.generateIconBox(profile.linkedIn, faLinkedin)}
+              {this.generateIconBox(profile.email, faAt)}
+            </Grid>
+            <DownwardsIcon icon={faChevronDown} size={iconSizes} />
+          </IconContainer>
+        </ThemeProvider>
       </ProfileBody>
     );
   }
