@@ -21,9 +21,9 @@ class Profile extends Component {
     const Container = styled.div`
       background: ${theme.backgroundColor};
       border-radius: 10px;
-      max-width: calc(325px + 2vw);
+      max-width: calc(350px + 8vw);
       margin: auto;
-      margin-top: 15vh;
+      margin-top: 12vh;
       padding: 1vmin;
       font-size: calc(24px + 2vmax);
     `;
