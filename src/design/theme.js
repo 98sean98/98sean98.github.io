@@ -2,22 +2,13 @@ import theme from 'styled-theming';
 
 const myTheme = {
   backgroundColor: theme('mode', {
-    dark: '#1a2849',
-    darkTransparent: '#1a284970',
+    dark: '#f6f6f6',
+    darkTransparent: '#f6f6f670',
   }),
-  textColor: theme('color', {
-    primary: '#505bda',
-    secondary: '#b063c5',
-    tertiary: '#ffaac3',
-  }),
-  button: theme('color', {
-    primary: '#505bda',
-    secondary: '#b063c5',
-    tertiary: '#ffaac3',
-  }),
-  textSize: theme('textSize', {
-    header: 'calc(24px + 2vmax)',
-    subheading: 'calc(12px + 1vmax)',
+  color: theme('color', {
+    primary: '#420000',
+    secondary: '#d4d7dd',
+    tertiary: '#eae9e9',
   }),
 };
 

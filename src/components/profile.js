@@ -30,7 +30,7 @@ class Profile extends Component {
 
     const Tag = styled.div`
       font-size: 0.5em;
-      color: ${theme.textColor};
+      color: ${theme.color};
     `;
 
     // const { profile } = this.props;
@@ -40,7 +40,7 @@ class Profile extends Component {
       <Container>
         <div>Hi | I'm </div>
         <div>Sean Chok</div>
-        <ThemeProvider theme={{ color: 'secondary' }}>
+        <ThemeProvider theme={{ color: 'primary' }}>
           <Tag>{tag}</Tag>
         </ThemeProvider>
       </Container>

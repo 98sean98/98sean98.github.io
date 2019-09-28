@@ -18,7 +18,7 @@ class App extends Component {
       background-position: center;
       background-blend-mode: multiply;
       text-align: center;
-      color: ${theme.textColor};
+      color: ${theme.color};
       font-family: 'Noto Sans', sans-serif;
     `;
 

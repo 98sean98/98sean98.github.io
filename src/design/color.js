@@ -1,8 +1,8 @@
 const color = {
-  primary: '#1a2849',
-  secondary: '#505bda',
-  tertiary: '#b063c5',
-  quaternary: '#ffaac3',
+  primary: '#f6f6f6',
+  secondary: '#eae9e9',
+  tertiary: '#d4d7dd',
+  quaternary: '#420000',
 };
 
 export default color;
