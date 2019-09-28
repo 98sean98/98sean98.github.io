@@ -33,16 +33,22 @@ class Profile extends Component {
       color: ${theme.color};
     `;
 
-    // const { profile } = this.props;
+    const Description = styled.div`
+      font-size: 0.4em;
+      margin: 3vh 2vw;
+    `;
+
+    const { profile } = this.props;
     const { tag } = this.state;
 
     return (
       <Container>
         <div>Hi | I'm </div>
-        <div>Sean Chok</div>
+        <div>{profile.myName}</div>
         <ThemeProvider theme={{ color: 'primary' }}>
           <Tag>{tag}</Tag>
         </ThemeProvider>
+        <Description>{profile.description}</Description>
       </Container>
     );
   }

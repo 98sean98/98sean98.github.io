@@ -2,7 +2,7 @@ module.exports = {
   profile: {
     myName: 'Sean Chok',
     description:
-      'Pursuing an undergraduate Bachelor Degree of Engineering (Mechanical) at the University of Hong Kong, I look forward to working on making space travel as common as air travel.',
+      '“If you are going to achieve excellence in big things, you develop the habit in little matters. Excellence is not an exception, it is a prevailing attitude.”',
     email: 'mailto:seanchok@connect.hku.hk',
     linkedIn: 'https://www.linkedin.com/in/sean-chok-9035b2144/',
     github: 'https://github.com/98sean98',
