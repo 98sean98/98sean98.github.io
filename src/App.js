@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from './design/theme';
-import drone from './images/drone.jpg';
+import drone from './images/drone_low_saturation.jpg';
 import siteConfig from './siteConfig';
 
 import Profile from './components/profile';
