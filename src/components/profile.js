@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from '../design/theme';
+import drone from '../images/drone_low_saturation.jpg';
 
 class Profile extends Component {
   state = {
@@ -18,6 +19,16 @@ class Profile extends Component {
   }
 
   render() {
+    const ProfileBody = styled.div`
+      height: 96vh;
+      padding: 2vh 2vw;
+      background: url(${drone}) ${theme.backgroundColor};
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: multiply;
+    `;
+
     const Container = styled.div`
       background: ${theme.backgroundColor};
       border-radius: 10px;
@@ -42,14 +53,16 @@ class Profile extends Component {
     const { tag } = this.state;
 
     return (
-      <Container>
-        <div>Hi | I'm </div>
-        <div>{profile.myName}</div>
-        <ThemeProvider theme={{ color: 'primary' }}>
-          <Tag>{tag}</Tag>
-        </ThemeProvider>
-        <Description>{profile.description}</Description>
-      </Container>
+      <ProfileBody>
+        <Container>
+          <div>Hi | I'm </div>
+          <div>{profile.myName}</div>
+          <ThemeProvider theme={{ color: 'primary' }}>
+            <Tag>{tag}</Tag>
+          </ThemeProvider>
+          <Description>{profile.description}</Description>
+        </Container>
+      </ProfileBody>
     );
   }
 }
