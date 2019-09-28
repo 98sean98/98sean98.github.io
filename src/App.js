@@ -13,10 +13,6 @@ class App extends Component {
       height: 96vh;
       padding: 2vh 2vw;
       background-color: ${theme.backgroundColor};
-      background-image: url(${mars});
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
       text-align: center;
       font-size: calc(12px + 2vmax);
       color: ${theme.textColor};
