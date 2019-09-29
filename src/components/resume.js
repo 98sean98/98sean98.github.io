@@ -19,11 +19,11 @@ class Resume extends Component {
     `;
 
     return (
-      <Container>
+      <Container key={subsection.tag}>
         <h2>{subsection.tag}</h2>
         <Subsection>
           {subsection.entries.map(entry => (
-            <Entry entry={entry} />
+            <Entry entry={entry} key={entry.head} />
           ))}
         </Subsection>
         <hr></hr>
