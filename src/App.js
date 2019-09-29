@@ -4,6 +4,7 @@ import theme from './design/theme';
 import siteConfig from './siteConfig';
 
 import Profile from './components/profile';
+import Resume from './components/resume';
 
 class App extends Component {
   render() {
@@ -15,9 +16,10 @@ class App extends Component {
     `;
 
     return (
-      <ThemeProvider theme={{ mode: 'darkTransparent', color: 'primary' }}>
+      <ThemeProvider theme={{ mode: 'lightTransparent', color: 'primary' }}>
         <AppBody>
           <Profile profile={siteConfig.profile} />
+          <Resume subsections={siteConfig.contents.subsections} />
         </AppBody>
       </ThemeProvider>
     );
