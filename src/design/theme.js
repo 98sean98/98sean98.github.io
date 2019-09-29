@@ -2,8 +2,8 @@ import theme from 'styled-theming';
 
 const myTheme = {
   backgroundColor: theme('mode', {
-    dark: '#f6f6f6',
-    darkTransparent: '#f6f6f670',
+    light: '#f6f6f6',
+    lightTransparent: '#f6f6f670',
   }),
   color: theme('color', {
     primary: '#420000',

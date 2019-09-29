@@ -27,16 +27,22 @@ const IconBox = posed.div({
 
 class Profile extends Component {
   state = {
-    tag: this.props.profile.tags[0],
+    tag: this.props.profile.tags[0][0],
   };
 
   componentDidMount() {
-    let i = 0;
-    const delay = 2000;
+    const delay = 150;
     const tags = this.props.profile.tags;
+    let i = 0,
+      j = 0;
     setInterval(() => {
-      i = (i + 1) % tags.length;
-      this.setState({ tag: tags[i] });
+      j += 1;
+      if (j === tags[i].length) {
+        i = (i + 1) % tags.length;
+        j = 0;
+      }
+      let newTag = tags[i].slice(0, j + 1);
+      this.setState({ tag: newTag });
     }, delay);
   }
 
