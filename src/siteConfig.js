@@ -54,7 +54,7 @@ module.exports = {
             description:
               'HKU team for DJI Robomaster Robotics Competition 2018/19. I was in-charged of designing, building, and testing 2 robots.',
             logo: 'Herkules.png',
-            link: 'http://innowing.hk/robomaster/',
+            link: 'http://innowing.hk/robomaster2019/',
           },
         ],
       },
