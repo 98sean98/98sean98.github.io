@@ -37,7 +37,7 @@ module.exports = {
           {
             head: 'iDTech Summer Camps',
             subhead: 'Instructor',
-            period: '11/2016 - 08/2018',
+            period: 'Summer 2019',
             description:
               "I taught children in STEM education during week-long summer camps; particularly, my class explores the world of Minecraft from a world builder's point of view. We also make sure that campers enjoy making friends, and having fun here in a safe environment.",
             logo: 'idtech-logo.png',
