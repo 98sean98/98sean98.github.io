@@ -56,6 +56,14 @@ module.exports = {
             logo: 'Herkules.png',
             link: 'http://innowing.hk/robomaster2019/',
           },
+          {
+            head: 'Formula Student - HKU Racing',
+            subhead: 'Aerodynamics Division',
+            description:
+              'HKU team for Formula Student UK 2019/2020. I am in-charged of performing computational fluid dynamics analysis to optimize wings and undertray design.',
+            logo: 'hkur.jpg',
+            link: 'http://innowing.hk/hkur/',
+          },
         ],
       },
       {
