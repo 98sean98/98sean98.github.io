@@ -100,6 +100,14 @@ module.exports = {
             link: 'https://globallegalhackathon.com/',
           },
           {
+            head: 'Fintech Week Hackathon 2019',
+            subhead: '1st Runner Up',
+            description:
+              'Developed Navis, an API solution coupled with a user platform as an escalation service for Hong Kong Export Credit Insurance Corporation.',
+            logo: 'fintechweek-hackathon-logo.png',
+            link: 'https://navis-app.co',
+          },
+          {
             head: 'HKIMUNC 2019',
             subhead: 'ECOFIN council - Outstanding Delegate',
             description:
