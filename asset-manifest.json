@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.21019b07.chunk.css",
-    "main.js": "/static/js/main.35aaddce.chunk.js",
-    "main.js.map": "/static/js/main.35aaddce.chunk.js.map",
+    "main.js": "/static/js/main.a04bc4b2.chunk.js",
+    "main.js.map": "/static/js/main.a04bc4b2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.783779e9.js",
     "runtime-main.js.map": "/static/js/runtime-main.783779e9.js.map",
-    "static/js/2.980c2ea1.chunk.js": "/static/js/2.980c2ea1.chunk.js",
-    "static/js/2.980c2ea1.chunk.js.map": "/static/js/2.980c2ea1.chunk.js.map",
+    "static/js/2.9817ef02.chunk.js": "/static/js/2.9817ef02.chunk.js",
+    "static/js/2.9817ef02.chunk.js.map": "/static/js/2.9817ef02.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bb380503a610b90bbedc9b5db752524b.js": "/precache-manifest.bb380503a610b90bbedc9b5db752524b.js",
+    "precache-manifest.35afc591353715865c05b984bec31581.js": "/precache-manifest.35afc591353715865c05b984bec31581.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.21019b07.chunk.css.map": "/static/css/main.21019b07.chunk.css.map",
-    "static/js/2.980c2ea1.chunk.js.LICENSE": "/static/js/2.980c2ea1.chunk.js.LICENSE",
+    "static/js/2.9817ef02.chunk.js.LICENSE": "/static/js/2.9817ef02.chunk.js.LICENSE",
     "static/media/BrainBuilder-logo.png": "/static/media/BrainBuilder-logo.b5f73a51.png",
     "static/media/GLH2019-logo.png": "/static/media/GLH2019-logo.c82a9333.png",
     "static/media/HKULogo.png": "/static/media/HKULogo.84a0630a.png",
     "static/media/Herkules.png": "/static/media/Herkules.720b2fef.png",
+    "static/media/RcTech-logo.png": "/static/media/RcTech-logo.83c07097.png",
     "static/media/TechCrunch-Logo.png": "/static/media/TechCrunch-Logo.d8a7913c.png",
     "static/media/brainbuilder.jpg": "/static/media/brainbuilder.233f3c7c.jpg",
     "static/media/drone.jpg": "/static/media/drone.42bbf60e.jpg",
@@ -27,14 +28,13 @@
     "static/media/mars.jpg": "/static/media/mars.f9354f0a.jpg",
     "static/media/navis.png": "/static/media/navis.7b640b05.png",
     "static/media/profile.jpg": "/static/media/profile.a5035cfd.jpg",
-    "static/media/rctech-logo.png": "/static/media/rctech-logo.83c07097.png",
     "static/media/rctech-sls.png": "/static/media/rctech-sls.94def8ab.png",
     "static/media/resume.pdf": "/static/media/resume.9c83d9b9.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.783779e9.js",
-    "static/js/2.980c2ea1.chunk.js",
+    "static/js/2.9817ef02.chunk.js",
     "static/css/main.21019b07.chunk.css",
-    "static/js/main.35aaddce.chunk.js"
+    "static/js/main.a04bc4b2.chunk.js"
   ]
 }
