@@ -1,29 +1,21 @@
-import React, { Component } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import theme from './design/theme';
-import siteConfig from './siteConfig';
+import React from 'react';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Profile from './components/Profile';
 
-import Profile from './components/profile';
-import Resume from './components/resume';
+const useStyles = makeStyles(() => ({
+  app: {
+    textAlign: 'center',
+  },
+}));
 
-class App extends Component {
-  render() {
-    const AppBody = styled.div`
-      @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
-      text-align: center;
-      color: ${theme.color};
-      font-family: 'Noto Sans', sans-serif;
-    `;
+const App = () => {
+  const classes = useStyles();
 
-    return (
-      <ThemeProvider theme={{ mode: 'lightTransparent', color: 'primary' }}>
-        <AppBody>
-          <Profile profile={siteConfig.profile} />
-          <Resume subsections={siteConfig.contents.subsections} />
-        </AppBody>
-      </ThemeProvider>
-    );
-  }
-}
+  return (
+    <div className={classes.app}>
+      <Profile />
+    </div>
+  );
+};
 
 export default App;

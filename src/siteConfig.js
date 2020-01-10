@@ -1,8 +1,6 @@
-module.exports = {
+export const siteConfig = {
   profile: {
     myName: 'Sean Chok',
-    description:
-      '“If you are going to achieve excellence in big things, you develop the habit in little matters. Excellence is not an exception, it is a prevailing attitude.”',
     email: 'mailto:seanchok@connect.hku.hk',
     linkedIn: 'https://www.linkedin.com/in/sean-chok-9035b2144/',
     github: 'https://github.com/98sean98',
