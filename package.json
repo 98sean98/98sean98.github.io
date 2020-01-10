@@ -10,6 +10,7 @@
     "@material-ui/core": "^4.4.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-ga": "^2.7.0",
     "react-pose": "^4.0.8",
     "react-scripts": "^3.3.0",
     "styled-components": "^4.4.0",
@@ -46,8 +47,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "npm run deploy"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "homepage": "https://98sean98.github.io"
