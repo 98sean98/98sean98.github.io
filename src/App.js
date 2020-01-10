@@ -2,6 +2,7 @@ import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Profile from './components/Profile';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 const useStyles = makeStyles(() => ({
   app: {
@@ -16,6 +17,7 @@ const App = () => {
     <div className={classes.app}>
       <Profile />
       <Resume />
+      <Footer />
     </div>
   );
 };
