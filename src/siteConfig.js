@@ -10,8 +10,8 @@ export const entries = [
   {
     tag: 'EDUCATION',
     head: 'The University of Hong Kong',
-    description: 'Bachelor of Engineering - Mechanical (09/2018 - 06/2022)',
-    image: 'HKULogo.png',
+    subhead: 'Bachelor of Engineering - Mechanical (09/2018 - 06/2022)',
+    image: 'hku-main-campus.jpg',
     link: 'http://me.hku.hk/',
   },
   {
@@ -20,7 +20,7 @@ export const entries = [
     subhead: 'Teacher / Curriculum Writer (11/2016 - 08/2018)',
     description:
       'My role included tailoring our Math program to suit the best interests of individual students, providing feedback to parents, etc.',
-    image: 'BrainBuilder-logo.png',
+    image: 'brainbuilder.jpg',
     link: 'http://brainbuildermaths.com/',
   },
   {
@@ -28,7 +28,8 @@ export const entries = [
     subhead: 'Instructor (Summer 2019)',
     description:
       "I taught children in STEM education during week-long summer camps; particularly, my class explores the world of Minecraft from a world builder's point of view. We also make sure that campers enjoy making friends, and having fun here in a safe environment.",
-    image: 'idtech-logo.png',
+    image: 'idtech-classroom.jpg',
+    imageType: 'video',
     link: 'https://www.idtech.com/',
   },
   {
@@ -56,7 +57,7 @@ export const entries = [
     period: '10/2018 - Present',
     description:
       'RC Tech is a student-led community in R.C. Lee Hall (HKU) that empowers innovation, and implementation of technology through multiple projects. The club holds workshops on topics ranging from web development, electronics and IoT hardware, to hydroponics. Club members also publish articles related to similar topics.',
-    image: 'RcTech-logo.png',
+    image: 'rctech-sls.png',
     link: 'https://www.rctech.club/',
   },
   {
@@ -92,16 +93,7 @@ export const entries = [
     subhead: 'ECOFIN council - Outstanding Delegate',
     description:
       "Delegated as the People's Republic of China, and discussed about the effects of protectionist policies on international trade.",
-    image: 'HKIMUNC_2019_logo.png',
+    image: 'hkimunc-award.jpg',
     link: null,
-  },
-  {
-    tag: 'ACHIEVEMENTS AND AWARDS',
-    head: 'Student/Staff Project Fund',
-    subhead: 'Project fund of HK$5000',
-    description:
-      'Student/Staff Project fund by R.C. Lee Hall at The University of Hong Kong for RC Tech.',
-    image: 'RcTech-logo.png',
-    link: 'https://www.rctech.club/',
   },
 ];

@@ -10,7 +10,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: '350px',
+    maxWidth: '400px',
   },
 }));
 
@@ -21,10 +21,19 @@ const Card = props => {
   return (
     <MuiCard className={classes.card}>
       <CardActionArea>
-        <CardMedia component="img" alt={entry.image} height="140" src={image} title={entry.head} />
+        <CardMedia
+          component="img"
+          alt={entry.image}
+          height="160px"
+          src={image}
+          title={entry.head}
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {entry.head}
+          </Typography>
+          <Typography gutterBottom variant="body1" component="p">
+            {entry.subhead}
           </Typography>
           <Typography variant="body2" component="p">
             {entry.description}
@@ -32,9 +41,11 @@ const Card = props => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href={entry.link}>
-          Learn More
-        </Button>
+        {entry.link ? (
+          <Button size="small" color="primary" href={entry.link}>
+            Learn More
+          </Button>
+        ) : null}
       </CardActions>
     </MuiCard>
   );
