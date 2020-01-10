@@ -42,7 +42,7 @@ const Card = props => {
       </CardActionArea>
       <CardActions>
         {entry.link ? (
-          <Button size="small" color="primary" href={entry.link}>
+          <Button size="small" color="secondary" href={entry.link}>
             Learn More
           </Button>
         ) : null}
