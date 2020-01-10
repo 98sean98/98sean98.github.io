@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 'stable'
+cache:
+  npm: true
+
+jobs:
+  include:
+    - stage: deploy-to-gh-pages
+      install:
+        - npm install
+      cache:
+        directories:
+          - 'build'
+      script:
+        - npm run build
+      deploy:
+        skip_cleanup: true
+        provider: pages
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        local_dir: './build'
+        on:
+          all_branches: true
+          condition: $TRAVIS_BRANCH =~ ^(build)$
+
+    - stage: test-deploy
+      script: curl https://owl.rctech.club
