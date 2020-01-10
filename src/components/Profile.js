@@ -7,7 +7,7 @@ import { faAt, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import posed from 'react-pose';
 import mars from '../images/mars.jpg';
-import { siteConfig } from '../siteConfig';
+import { profile } from '../siteConfig';
 
 const useStyles = makeStyles(theme => ({
   profileBody: {
@@ -61,7 +61,6 @@ const IconBox = posed.div({
 
 const Profile = () => {
   const classes = useStyles();
-  const { profile } = siteConfig;
 
   const icons = [
     { link: profile.github, component: faGithub },

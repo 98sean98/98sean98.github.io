@@ -1,62 +1,32 @@
-import React, { Component } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import theme from '../design/theme';
-import { Button } from '@material-ui/core';
-
-import Entry from './entry';
-
+import React from 'react';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Grid from '@material-ui/core/Grid';
+import Card from './Card';
+import { images } from '../images';
+import { entries } from '../siteConfig';
 import resume from '../resume.pdf';
 
-class Resume extends Component {
-  generateGrid = subsection => {
-    const Container = styled.div`
-      margin: 2vh auto;
-      max-width: calc(800px + 5vw);
-    `;
+const useStyles = makeStyles(() => ({
+  root: {
+    flexGrow: 1,
+    margin: '4vh 3vw',
+  },
+}));
 
-    const Subsection = styled.div`
-      margin: 2vh auto;
-    `;
+const Resume = () => {
+  const classes = useStyles();
 
-    return (
-      <Container key={subsection.tag}>
-        <h2>{subsection.tag}</h2>
-        <Subsection>
-          {subsection.entries.map(entry => (
-            <Entry entry={entry} key={entry.head} />
-          ))}
-        </Subsection>
-        <hr></hr>
-      </Container>
-    );
-  };
-
-  render() {
-    const { subsections } = this.props;
-
-    const Body = styled.div`
-      padding: 2vh 4vw;
-      background: ${theme.backgroundColor};
-    `;
-
-    const Footer = styled.div`
-      margin-bottom: 2vh;
-    `;
-
-    return (
-      <ThemeProvider theme={{ mode: 'light', color: 'primary' }}>
-        <Body>
-          {subsections.map(subsection => this.generateGrid(subsection))}
-          <h4>Click each section to find out more.</h4>
-          <Footer>
-            <a download href={resume} style={{ textDecoration: 'none' }}>
-              <Button>Download My Resume</Button>
-            </a>
-          </Footer>
-        </Body>
-      </ThemeProvider>
-    );
-  }
-}
+  return (
+    <div className={classes.root}>
+      <Grid container spacing={4}>
+        {entries.map(entry => (
+          <Grid item xs={12} sm={6} md={4} key={entry.head}>
+            <Card entry={entry} image={images[entry.image]} />
+          </Grid>
+        ))}
+      </Grid>
+    </div>
+  );
+};
 
 export default Resume;
