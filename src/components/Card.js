@@ -11,6 +11,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: '400px',
+    margin: 'auto',
   },
 }));
 
