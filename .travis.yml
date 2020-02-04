@@ -26,6 +26,3 @@ jobs:
         on:
           all_branches: true
           condition: $TRAVIS_BRANCH =~ ^(build)$
-
-    - stage: test-deploy
-      script: curl https://owl.rctech.club
