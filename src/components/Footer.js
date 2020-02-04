@@ -5,11 +5,12 @@ import MuiLink from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
   footer: {
-    padding: theme.spacing(3),
+    padding: theme.spacing(2),
     background: theme.palette.primary.dark,
     color: theme.palette.primary.contrastText,
   },
   text: {
+    display: 'block',
     margin: theme.spacing(1),
   },
 }));
@@ -24,12 +25,12 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <div className={classes.footer}>
-      <Typography variant={'body2'} className={classes.text}>
-        Powered with <Link href="https://reactjs.org/">React</Link>. Built with{' '}
+      <Typography variant={'caption'} className={classes.text}>
+        Powered by <Link href="https://reactjs.org/">React</Link>. Built with{' '}
         <Link href="https://material-ui.com/">Material-UI</Link>. Managed at{' '}
         <Link href="https://github.com/98sean98/98sean98.github.io">Github Repo</Link>.
       </Typography>
-      <Typography variant={'body2'} className={classes.text}>
+      <Typography variant={'caption'} className={classes.text}>
         Some of the images used do not belong to me, and they do not represent any form of
         commercial value on this site.
       </Typography>
