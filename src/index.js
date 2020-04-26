@@ -6,21 +6,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-let theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#934838',
+const theme = responsiveFontSizes(
+  createMuiTheme({
+    palette: {
+      primary: {
+        main: '#934838',
+      },
+      secondary: {
+        main: '#320A28',
+      },
     },
-    secondary: {
-      main: '#320A28',
+    typography: {
+      fontFamily: ['Noto Sans', 'sans serif'].join(','),
     },
-  },
-  typography: {
-    fontFamily: ['Noto Sans', 'sans serif'].join(','),
-  },
-});
-
-theme = responsiveFontSizes(theme);
+  })
+);
 
 const Index = () => (
   <ThemeProvider theme={theme}>
