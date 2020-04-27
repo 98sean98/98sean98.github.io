@@ -1,11 +1,11 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core';
-import { rawThemeObject } from './rawThemeObject';
+import { mobileScreenThemeObject } from './mobileScreenTheme';
 
-const typography = Object.assign(rawThemeObject.typography, { fontSize: 10 });
+const typography = Object.assign(mobileScreenThemeObject.typography, { fontSize: 10 });
 
-const ThemeObject = {
-  ...rawThemeObject,
+export const smallScreenThemeObject = {
+  ...mobileScreenThemeObject,
   typography,
 };
 
-export const smallScreenTheme = responsiveFontSizes(createMuiTheme(ThemeObject));
+export const smallScreenTheme = responsiveFontSizes(createMuiTheme(smallScreenThemeObject));

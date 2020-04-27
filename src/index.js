@@ -3,20 +3,18 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { rootReducer } from './reducers';
-import { ThemeProvider, CssBaseline } from '@material-ui/core';
-import { defaultTheme } from './config/theme/defaultTheme';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ThemeWrapper from './ThemeWrapper';
 
 const store = createStore(rootReducer);
 
 const Index = () => (
   <Provider store={store}>
-    <ThemeProvider theme={defaultTheme}>
-      <CssBaseline />
+    <ThemeWrapper>
       <App />
-    </ThemeProvider>
+    </ThemeWrapper>
   </Provider>
 );
 
