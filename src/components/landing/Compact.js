@@ -1,11 +1,16 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { Profile } from './Profile';
+import landing from '../../images/landing-portrait-03.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
     height: '100vh',
-    backgroundColor: theme.palette.primary.main,
+    background: `url(${landing})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: `no-repeat`,
+    backgroundPosition: `center`,
+    backgroundBlendMode: 'multiply',
   },
   profile: {
     padding: theme.spacing(4),
