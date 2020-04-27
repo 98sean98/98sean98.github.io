@@ -1,40 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.21019b07.chunk.css",
-    "main.js": "/static/js/main.abad7e9c.chunk.js",
-    "main.js.map": "/static/js/main.abad7e9c.chunk.js.map",
+    "main.js": "/static/js/main.98fe1761.chunk.js",
+    "main.js.map": "/static/js/main.98fe1761.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.48ca91fe.js",
     "runtime-main.js.map": "/static/js/runtime-main.48ca91fe.js.map",
-    "static/js/2.325dc2f4.chunk.js": "/static/js/2.325dc2f4.chunk.js",
-    "static/js/2.325dc2f4.chunk.js.map": "/static/js/2.325dc2f4.chunk.js.map",
+    "static/js/2.f400369f.chunk.js": "/static/js/2.f400369f.chunk.js",
+    "static/js/2.f400369f.chunk.js.map": "/static/js/2.f400369f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ca82e702fd32f8651da8d5c4b6c8acc8.js": "/precache-manifest.ca82e702fd32f8651da8d5c4b6c8acc8.js",
+    "precache-manifest.6aa90895515fadbab2148785ca8fc1b1.js": "/precache-manifest.6aa90895515fadbab2148785ca8fc1b1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.21019b07.chunk.css.map": "/static/css/main.21019b07.chunk.css.map",
-    "static/js/2.325dc2f4.chunk.js.LICENSE.txt": "/static/js/2.325dc2f4.chunk.js.LICENSE.txt",
-    "static/media/BrainBuilder-logo.png": "/static/media/BrainBuilder-logo.b5f73a51.png",
-    "static/media/GLH2019-logo.png": "/static/media/GLH2019-logo.c82a9333.png",
-    "static/media/HKULogo.png": "/static/media/HKULogo.84a0630a.png",
-    "static/media/Herkules.png": "/static/media/Herkules.720b2fef.png",
-    "static/media/RcTech-logo.png": "/static/media/RcTech-logo.83c07097.png",
-    "static/media/TechCrunch-Logo.png": "/static/media/TechCrunch-Logo.d8a7913c.png",
-    "static/media/brainbuilder.jpg": "/static/media/brainbuilder.233f3c7c.jpg",
-    "static/media/drone.jpg": "/static/media/drone.42bbf60e.jpg",
-    "static/media/hkimunc-award.jpg": "/static/media/hkimunc-award.1c227725.jpg",
-    "static/media/hku-main-campus.jpg": "/static/media/hku-main-campus.27f9a1ea.jpg",
-    "static/media/hkur.jpg": "/static/media/hkur.68729d5d.jpg",
-    "static/media/idtech-classroom.jpg": "/static/media/idtech-classroom.a9c13580.jpg",
-    "static/media/idtech-logo.png": "/static/media/idtech-logo.91d6d73b.png",
-    "static/media/mars.jpg": "/static/media/mars.f9354f0a.jpg",
-    "static/media/navis.png": "/static/media/navis.7b640b05.png",
-    "static/media/profile.jpg": "/static/media/profile.a5035cfd.jpg",
-    "static/media/rctech-sls.png": "/static/media/rctech-sls.94def8ab.png",
-    "static/media/resume.pdf": "/static/media/resume.bc958edd.pdf"
+    "static/js/2.f400369f.chunk.js.LICENSE.txt": "/static/js/2.f400369f.chunk.js.LICENSE.txt",
+    "static/media/landing-landscape-02.png": "/static/media/landing-landscape-02.292a047b.png",
+    "static/media/landing-portrait-03.png": "/static/media/landing-portrait-03.8df38de2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.48ca91fe.js",
-    "static/js/2.325dc2f4.chunk.js",
+    "static/js/2.f400369f.chunk.js",
     "static/css/main.21019b07.chunk.css",
-    "static/js/main.abad7e9c.chunk.js"
+    "static/js/main.98fe1761.chunk.js"
   ]
 }
