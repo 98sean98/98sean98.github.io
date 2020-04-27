@@ -3,33 +3,18 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { rootReducer } from './reducers';
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/core';
+import { ThemeProvider, CssBaseline } from '@material-ui/core';
+import { defaultTheme } from './config/theme/defaultTheme';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(rootReducer);
 
-const theme = responsiveFontSizes(
-  createMuiTheme({
-    palette: {
-      primary: {
-        main: '#934838',
-      },
-      secondary: {
-        main: '#320A28',
-      },
-    },
-    typography: {
-      fontFamily: ['Noto Sans', 'sans serif'].join(','),
-    },
-  })
-);
-
 const Index = () => (
   <Provider store={store}>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
+      <CssBaseline />
       <App />
     </ThemeProvider>
   </Provider>

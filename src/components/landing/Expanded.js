@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import { Profile } from './Profile';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import Grid from '@material-ui/core/Grid';
+import { Profile } from './Profile';
 import landing from '../../images/landing_v1.1.png';
 
 const useStyles = makeStyles(theme => ({
@@ -13,16 +13,19 @@ const useStyles = makeStyles(theme => ({
     backgroundPosition: `center`,
     backgroundBlendMode: 'multiply',
   },
+  profile: {
+    padding: theme.spacing(4),
+  },
 }));
 
 export const Expanded = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Container>
+    <Grid className={classes.root}>
+      <Grid item xs={6} className={classes.profile}>
         <Profile />
-      </Container>
-    </div>
+      </Grid>
+    </Grid>
   );
 };
