@@ -8,6 +8,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     background: theme.palette.primary.dark,
     color: theme.palette.primary.contrastText,
+    textAlign: 'center',
   },
   text: {
     display: 'block',
@@ -21,7 +22,7 @@ const Link = ({ href, children }) => (
   </MuiLink>
 );
 
-const Footer = () => {
+export const Footer = () => {
   const classes = useStyles();
   return (
     <div className={classes.footer}>
@@ -37,5 +38,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;
