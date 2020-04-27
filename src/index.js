@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { rootReducer } from './reducers';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+const store = createStore(rootReducer);
 
 const theme = responsiveFontSizes(
   createMuiTheme({
@@ -23,9 +28,11 @@ const theme = responsiveFontSizes(
 );
 
 const Index = () => (
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </Provider>
 );
 
 ReactDOM.render(<Index />, document.getElementById('root'));
