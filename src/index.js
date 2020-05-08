@@ -6,7 +6,7 @@ import { initialState, rootReducer } from './reducers';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import ThemeWrapper from './ThemeWrapper';
+import { ThemeWrapper } from './ThemeWrapper';
 
 // Grab the state from a global variable injected into the server-generated HTML
 const preloadedState = window.__PRELOADED_STATE__;

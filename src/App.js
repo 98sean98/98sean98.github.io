@@ -4,6 +4,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import { updateWindowSize } from './actions';
 import { Landing } from './components/landing/Landing';
 import { Footer } from './components/Footer';
+import { Robomaster } from './components/projects/robomaster/Robomaster';
 
 const useStyles = makeStyles(() => ({
   app: {},
@@ -24,6 +25,7 @@ const App = ({ updateWindowSize }) => {
   return (
     <div className={classes.app}>
       <Landing />
+      <Robomaster />
       <Footer />
     </div>
   );

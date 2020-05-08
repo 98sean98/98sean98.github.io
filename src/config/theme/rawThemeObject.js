@@ -22,5 +22,8 @@ export const rawThemeObject = {
   },
   typography: {
     fontFamily: ['Noto Sans', 'sans serif'].join(','),
+    body2: {
+      fontWeight: 600,
+    },
   },
 };
