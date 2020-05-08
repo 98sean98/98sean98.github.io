@@ -1,29 +1,16 @@
 import React from 'react';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { DroneCrash } from './DroneCrash';
 import { Details } from './Details';
-
-const useStyles = makeStyles(theme => ({
-  grid: {
-    margin: `${theme.spacing(2)}px 0`,
-  },
-}));
+import { SectionContainer } from '../../generic/SectionContainer';
 
 export const Robomaster = () => {
-  const classes = useStyles();
   const shouldAlignCenter = useMediaQuery(theme => theme.breakpoints.down('xs'));
 
   return (
-    <Container>
-      <Grid
-        container
-        spacing={2}
-        justify={'space-between'}
-        alignItems={'center'}
-        className={classes.grid}>
+    <SectionContainer>
+      <Grid container spacing={2} justify={'space-between'} alignItems={'center'}>
         <Grid item xs={12} sm={7} md={3} lg={8}>
           <Details shouldAlignCenter={shouldAlignCenter} />
         </Grid>
@@ -31,6 +18,6 @@ export const Robomaster = () => {
           <DroneCrash />
         </Grid>
       </Grid>
-    </Container>
+    </SectionContainer>
   );
 };

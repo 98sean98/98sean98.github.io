@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { updateWindowSize } from './actions';
 import { Landing } from './components/landing/Landing';
-import { Footer } from './components/Footer';
+import { AboutMe } from './components/about-me/AboutMe';
 import { Robomaster } from './components/projects/robomaster/Robomaster';
+import { Footer } from './components/Footer';
+import { ContentDivider } from './components/generic/ContentDivider';
 
 const useStyles = makeStyles(() => ({
   app: {},
@@ -25,6 +27,8 @@ const App = ({ updateWindowSize }) => {
   return (
     <div className={classes.app}>
       <Landing />
+      <AboutMe />
+      <ContentDivider />
       <Robomaster />
       <Footer />
     </div>
