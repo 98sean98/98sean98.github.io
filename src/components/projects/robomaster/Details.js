@@ -31,14 +31,14 @@ export const Details = ({ shouldAlignCenter }) => {
   ];
 
   return (
-    <Container className={shouldAlignCenter ? classes.alignCenter : classes.alignRight}>
+    <Container className={shouldAlignCenter ? classes.alignCenter : classes.alignLeft}>
       <div className={classes.section}>
         <Typography variant={'h4'}>Robomaster</Typography>
         <Typography variant={'caption'}>
           HKU team in <Link>Dreamlab</Link>
         </Typography>
       </div>
-      <ul className={`${classes.section} ${classes.alignLeft}`}>
+      <ul className={classes.section}>
         {points.map((point, index) => (
           <li key={index}>
             <Typography variant={'body1'}>{point}</Typography>

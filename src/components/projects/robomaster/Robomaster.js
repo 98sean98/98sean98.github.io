@@ -10,9 +10,6 @@ const useStyles = makeStyles(theme => ({
   grid: {
     margin: `${theme.spacing(2)}px 0`,
   },
-  details: {
-    textAlign: 'right',
-  },
 }));
 
 export const Robomaster = () => {
@@ -24,7 +21,7 @@ export const Robomaster = () => {
       <Grid
         container
         spacing={2}
-        justify={'flex-end'}
+        justify={'space-between'}
         alignItems={'center'}
         className={classes.grid}>
         <Grid item xs={12} sm={7} md={3} lg={8}>
