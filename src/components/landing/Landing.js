@@ -1,6 +1,5 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { connect } from 'react-redux';
 import { Expanded } from './Expanded';
 import { Compact } from './Compact';
 import { useScreen } from '../../custom-hooks/useScreen';
