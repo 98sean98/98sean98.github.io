@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'left',
   },
   section: {
-    margin: `${theme.spacing(1)}px 0`,
+    margin: `${theme.spacing(1)}px auto`,
   },
 }));
 
@@ -38,7 +38,7 @@ export const Details = ({ shouldAlignCenter }) => {
           HKU team in <Link>Dreamlab</Link>
         </Typography>
       </div>
-      <ul className={classes.section}>
+      <ul className={`${classes.section} ${classes.alignLeft}`}>
         {points.map((point, index) => (
           <li key={index}>
             <Typography variant={'body1'}>{point}</Typography>

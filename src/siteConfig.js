@@ -7,7 +7,7 @@ export const profile = {
   email: 'mailto:seanchok@connect.hku.hk',
   linkedIn: 'https://www.linkedin.com/in/sean-chok-9035b2144/',
   github: 'https://github.com/98sean98',
-  tags: ['mechanical engineer', 'space enthusiast', 'robot builder', 'web developer'],
+  tags: ['mechanical engineer', 'space enthusiast', 'web developer'],
   school: 'The University of Hong Kong',
 };
 
