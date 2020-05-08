@@ -1,16 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import { useScreen } from './custom-hooks/useScreen';
 import { defaultTheme } from './config/theme/defaultTheme';
 import { mobileScreenTheme } from './config/theme/mobileScreenTheme';
 import { smallScreenTheme } from './config/theme/smallScreenTheme';
 
-const ThemeWrapper = ({ windowSize, children }) => {
+export const ThemeWrapper = ({ children }) => {
+  const { isMobileScreen, isSmallScreen } = useScreen();
   let theme = defaultTheme;
-
-  const sizeThreshold = 600;
-  const isMobileScreen = windowSize.width < sizeThreshold || windowSize.height < sizeThreshold;
-  const isSmallScreen = windowSize.width < sizeThreshold && windowSize.height < sizeThreshold;
 
   if (isMobileScreen) theme = mobileScreenTheme;
   if (isSmallScreen) theme = smallScreenTheme;
@@ -22,9 +19,3 @@ const ThemeWrapper = ({ windowSize, children }) => {
     </ThemeProvider>
   );
 };
-
-const mapState = state => ({
-  windowSize: state.windowSize,
-});
-
-export default connect(mapState)(ThemeWrapper);
