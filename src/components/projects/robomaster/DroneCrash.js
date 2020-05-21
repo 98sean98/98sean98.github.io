@@ -1,5 +1,6 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import Image from 'material-ui-image';
 import droneCrash from '../../../images/drone_crash.gif';
 import { useScreen } from '../../../custom-hooks/useScreen';
 
@@ -25,7 +26,7 @@ export const DroneCrash = () => {
 
   return (
     <div className={classes.root}>
-      <img
+      <Image
         className={!isSmallScreen ? classes.gif : classes.smallGif}
         src={droneCrash}
         alt={'drone crash'}

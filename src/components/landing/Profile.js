@@ -72,7 +72,7 @@ export const Profile = () => {
       </div>
       <Zoom clear delay={thirdGroupDelay}>
         <div className={classes.textBox}>
-          <Typography variant={'body1'}>Would you like to work with me? Contact me at </Typography>
+          <Typography variant={'body1'}>Would you like to work with me? Find me at </Typography>
         </div>
       </Zoom>
       <Fade cascade bottom duration={500 * icons.length} delay={fourthGroupDelay}>

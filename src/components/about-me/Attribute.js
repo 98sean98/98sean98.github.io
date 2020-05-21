@@ -6,7 +6,7 @@ const useStyles = makeStyles(theme => ({
   image: {
     borderRadius: '10%',
     width: '100%',
-    maxWidth: '125px',
+    maxWidth: '100px',
     height: 'auto',
   },
   spacing: {
