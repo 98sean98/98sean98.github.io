@@ -40,8 +40,7 @@ export const AboutMe = () => {
           </Link>{' '}
           from{' '}
           <Link href="https://www.flaticon.com/" title="Flaticon">
-            {' '}
-            www.flaticon.com
+            Flaticon
           </Link>
           .
         </Typography>

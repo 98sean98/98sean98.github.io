@@ -5,7 +5,7 @@ export const rawThemeObject = {
       contrastText: '#FCF7F8',
     },
     secondary: {
-      main: '#CCCCCC',
+      main: '#1B264F',
     },
     info: {
       main: '#87F6FF',

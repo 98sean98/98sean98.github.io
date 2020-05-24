@@ -7,6 +7,7 @@ import { AboutMe } from './components/about-me/AboutMe';
 import { Robomaster } from './components/projects/robomaster/Robomaster';
 import { Footer } from './components/Footer';
 import { ContentDivider } from './components/generic/ContentDivider';
+import { Aerospace } from './components/projects/aerospace/Aerospace';
 
 const useStyles = makeStyles(() => ({
   app: {},
@@ -30,6 +31,8 @@ const App = ({ updateWindowSize }) => {
       <AboutMe />
       <ContentDivider />
       <Robomaster />
+      <ContentDivider />
+      <Aerospace />
       <Footer />
     </div>
   );
