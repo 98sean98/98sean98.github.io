@@ -30,7 +30,7 @@ export const Rocket = () => {
 
   const { windowSize, isMobileScreen, isLandscape } = useScreen();
   const horizontalDistance = (isMobileScreen && !isLandscape ? 0.6 : 0.75) * windowSize.width;
-  const verticalDistance = 0.7 * windowSize.height;
+  const verticalDistance = Math.min(0.7 * windowSize.height, 1.4 * horizontalDistance);
 
   const [isLaunched, setIsLaunched] = useState(false);
   const [isFlying, setIsFlying] = useState(false);
@@ -80,11 +80,11 @@ export const Rocket = () => {
     return function(t) {
       switch (attribute) {
         case 'x':
-          return a + b * (1 - Math.cos((Math.PI / 2) * t));
+          return a + (b / (Math.exp(1) - 2)) * (Math.exp(t) - t - 1);
         case 'y':
-          return a + b * Math.sin((Math.PI / 2) * (1 - Math.cos((Math.PI / 2) * t)));
+          return a + b * Math.sin((Math.PI / (2 * (Math.exp(1) - 2))) * (Math.exp(t) - t - 1));
         case 'angle':
-          return a + b * (1 - Math.cos((Math.PI / 2) * t)); // constant angular velocity
+          return a + b * (1 - Math.cos((Math.PI / 2) * t));
         default:
           return a + b * t;
       }
