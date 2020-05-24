@@ -84,7 +84,7 @@ export const Rocket = () => {
         case 'y':
           return a + b * Math.sin((Math.PI / (2 * (Math.exp(1) - 2))) * (Math.exp(t) - t - 1));
         case 'angle':
-          return a + b * (1 - Math.cos((Math.PI / 2) * t));
+          return a + (b / (Math.exp(1) - 2)) * (Math.exp(t) - t - 1);
         default:
           return a + b * t;
       }
