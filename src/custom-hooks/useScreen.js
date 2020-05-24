@@ -12,5 +12,5 @@ export const useScreen = () => {
   const isLandscape =
     aspectRatio >= landscapeAspectRatio.minimum && aspectRatio <= landscapeAspectRatio.maximum;
 
-  return { isMobileScreen, isSmallScreen, isLandscape };
+  return { windowSize, isMobileScreen, isSmallScreen, isLandscape };
 };

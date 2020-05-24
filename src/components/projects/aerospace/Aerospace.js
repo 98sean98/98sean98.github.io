@@ -6,7 +6,7 @@ import { Details } from './Details';
 
 export const Aerospace = () => {
   return (
-    <SectionContainer>
+    <SectionContainer key={'aerospace'}>
       <Grid container spacing={2} justify={'space-between'} alignItems={'center'}>
         <Grid item xs={12} sm={4} md={3}>
           <Rocket />
