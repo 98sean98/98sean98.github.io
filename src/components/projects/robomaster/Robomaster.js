@@ -9,7 +9,7 @@ export const Robomaster = () => {
   const shouldAlignCenter = useMediaQuery(theme => theme.breakpoints.down('xs'));
 
   return (
-    <SectionContainer>
+    <SectionContainer key={'robomaster'}>
       <Grid container spacing={2} justify={'space-between'} alignItems={'center'}>
         <Grid item xs={12} sm={7} md={3} lg={8}>
           <Details shouldAlignCenter={shouldAlignCenter} />

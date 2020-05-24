@@ -8,11 +8,11 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const SectionContainer = ({ textAlign, children }) => {
+export const SectionContainer = ({ key, textAlign, children }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div key={key} className={classes.root}>
       <Container style={{ textAlign }}>{children}</Container>
     </div>
   );

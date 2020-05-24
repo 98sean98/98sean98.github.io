@@ -37,6 +37,9 @@ export const Footer = () => {
         Some of the images used do not belong to me, and they do not represent any form of
         commercial value on this site.
       </Typography>
+      <Typography variant={'caption'} className={classes.text}>
+        This site is mobile friendly, and it adjusts itself based on device orientation.
+      </Typography>
     </div>
   );
 };

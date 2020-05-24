@@ -31,6 +31,7 @@ const App = ({ updateWindowSize }) => {
       <AboutMe />
       <ContentDivider />
       <Robomaster />
+      <ContentDivider />
       <Aerospace />
       <Footer />
     </div>

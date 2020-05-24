@@ -17,7 +17,7 @@ export const AboutMe = () => {
   const classes = useStyles();
 
   return (
-    <SectionContainer textAlign={'center'}>
+    <SectionContainer key={'about-me'} textAlign={'center'}>
       <div className={classes.section}>
         <Typography variant={'h5'}>I am a </Typography>
       </div>
