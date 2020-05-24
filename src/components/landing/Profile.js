@@ -1,5 +1,6 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
@@ -21,6 +22,12 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(2),
   },
 }));
+
+const CustomIconButton = withStyles(theme => ({
+  root: {
+    color: theme.palette.primary.contrastText,
+  },
+}))(IconButton);
 
 export const Profile = () => {
   const classes = useStyles();
@@ -79,13 +86,13 @@ export const Profile = () => {
         <Grid container spacing={2} className={classes.iconGrid}>
           {icons.map((icon, index) => (
             <Grid item key={index}>
-              <IconButton
-                color={'secondary'}
+              <CustomIconButton
+                color={'primary'}
                 href={icon.link}
                 target={'_blank'}
                 rel={'noopener noreferrer'}>
                 {icon.component}
-              </IconButton>
+              </CustomIconButton>
             </Grid>
           ))}
         </Grid>
