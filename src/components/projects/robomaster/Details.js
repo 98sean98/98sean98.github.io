@@ -28,7 +28,7 @@ export const Details = ({ shouldAlignCenter }) => {
   ];
 
   return (
-    <Container className={shouldAlignCenter ? classes.alignCenter : classes.alignLeft}>
+    <Container className={classes.alignLeft}>
       <div className={classes.section}>
         <Typography variant={'h4'}>Robomaster</Typography>
         <Typography variant={'caption'}>
@@ -36,7 +36,7 @@ export const Details = ({ shouldAlignCenter }) => {
         </Typography>
       </div>
       <div className={classes.section}>
-        <ul className={clsx(classes.section, classes.alignLeft)}>
+        <ul>
           {points.map((point, index) => (
             <li key={index}>
               <Typography variant={'body1'}>{point}</Typography>
@@ -47,7 +47,7 @@ export const Details = ({ shouldAlignCenter }) => {
           Key takeaway: a drone that had questionable flight safety
         </Typography>
       </div>
-      <div className={classes.section}>
+      <div className={clsx(classes.section, shouldAlignCenter && classes.alignCenter)}>
         <Button
           variant={'outlined'}
           color={'primary'}

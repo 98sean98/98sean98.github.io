@@ -18,7 +18,8 @@ const useStyles = makeStyles(theme => ({
     boxShadow: '0 0 0 1000vmax rgba(10,10,10,0.3)',
   },
   svg: {
-    height: 150,
+    height: '15vh',
+    maxHeight: 150,
   },
 }));
 
@@ -63,12 +64,12 @@ export const Rocket = () => {
         x: isLaunched && isFlying ? [xValue] : xValue,
         y: isLaunched && isFlying ? [yValue] : yValue,
         angle: isLaunched && isFlying ? [angleValue] : angleValue,
-        timing: { delay: 150, duration: launchDuration },
+        timing: { delay: 100, duration: launchDuration },
       },
       {
         opacity: isLaunched || !isFlying ? 1 : [0, 1],
         // opacity = 1 when rocket is being launched or not flying
-        timing: { delay: 150, duration: resetDuration },
+        timing: { delay: 100, duration: resetDuration },
       },
     ];
   };

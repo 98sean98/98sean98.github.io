@@ -1,9 +1,10 @@
 import React from 'react';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import clsx from 'clsx';
 import rocket_calculations from '../../../pdf/rocket_calculations.pdf';
-import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles(theme => ({
   alignCenter: {
@@ -29,7 +30,7 @@ export const Details = ({ shouldAlignCenter }) => {
   ];
 
   return (
-    <Container className={shouldAlignCenter ? classes.alignCenter : classes.alignLeft}>
+    <Container className={classes.alignLeft}>
       <div className={classes.section}>
         <Typography variant={'h4'}>A Rocket Animation</Typography>
       </div>
@@ -39,7 +40,7 @@ export const Details = ({ shouldAlignCenter }) => {
           resistance, I attempted to solve for the 2-dimensional displacements as functions of time.
           Several strong assumptions had to be made to simplify a lot of the calculations.
         </Typography>
-        <ul className={classes.alignLeft}>
+        <ul>
           {assumptions.map((assumption, index) => (
             <li key={index}>
               <Typography variant={'body1'}>{assumption}</Typography>
@@ -75,15 +76,17 @@ export const Details = ({ shouldAlignCenter }) => {
           Key takeaway: fried my brain a little bit
         </Typography>
       </div>
-      <Button
-        target={'_blank'}
-        rel={'noopener noreferrer'}
-        href={rocket_calculations}
-        color={'secondary'}
-        variant={'outlined'}
-        size={'small'}>
-        open rocket calculations
-      </Button>
+      <div className={clsx(classes.section, shouldAlignCenter && classes.alignCenter)}>
+        <Button
+          target={'_blank'}
+          rel={'noopener noreferrer'}
+          href={rocket_calculations}
+          color={'secondary'}
+          variant={'outlined'}
+          size={'small'}>
+          open rocket calculations
+        </Button>
+      </div>
     </Container>
   );
 };
