@@ -6,7 +6,7 @@ import { Details } from './Details';
 import { SectionContainer } from '../../generic/SectionContainer';
 
 export const Robomaster = () => {
-  const isXsScreen = useMediaQuery(theme => theme.breakpoints.down('xs'));
+  const isXsScreen = useMediaQuery(theme => theme.breakpoints.only('xs'));
 
   return (
     <SectionContainer>
