@@ -3,12 +3,13 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import clsx from 'clsx';
-import rocket_calculations from '../../../pdf/rocket_calculations.pdf';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Link from '@material-ui/core/Link';
+import clsx from 'clsx';
+import rocket_calculations from '../../../pdf/rocket_calculations.pdf';
 
 const useStyles = makeStyles(theme => ({
   alignCenter: {
@@ -92,6 +93,10 @@ export const Details = ({ shouldAlignCenter }) => {
           </ExpansionPanelDetails>
         </ExpansionPanel>
 
+        <Typography variant={'body2'} gutterBottom>
+          Animation library used:{' '}
+          <Link href={'https://github.com/react-tools/react-move'}>react-move</Link>
+        </Typography>
         <Typography variant={'body2'} gutterBottom>
           Key takeaway: fried my brain a little bit
         </Typography>

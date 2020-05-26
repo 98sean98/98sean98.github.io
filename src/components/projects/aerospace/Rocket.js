@@ -3,9 +3,9 @@ import { useScreen } from '../../../custom-hooks/useScreen';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
+import clsx from 'clsx';
 import { Animate } from 'react-move';
 import { ReactComponent as RocketSVG } from './rocket.svg';
-import clsx from 'clsx';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: '0 0 0 1000vmax rgba(10,10,10,0.3)',
   },
   svg: {
-    height: '15vh',
+    height: 'calc(12vh + 3vmax)',
     maxHeight: 150,
   },
 }));
