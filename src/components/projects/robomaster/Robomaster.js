@@ -6,13 +6,13 @@ import { Details } from './Details';
 import { SectionContainer } from '../../generic/SectionContainer';
 
 export const Robomaster = () => {
-  const shouldAlignCenter = useMediaQuery(theme => theme.breakpoints.down('xs'));
+  const isXsScreen = useMediaQuery(theme => theme.breakpoints.down('xs'));
 
   return (
     <SectionContainer>
       <Grid container spacing={2} justify={'space-between'} alignItems={'center'}>
         <Grid item xs={12} sm={7} md={9} lg={8}>
-          <Details shouldAlignCenter={shouldAlignCenter} />
+          <Details shouldAlignCenter={isXsScreen} />
         </Grid>
         <Grid item xs={12} sm={5} md={3} lg={4}>
           <DroneCrash />
