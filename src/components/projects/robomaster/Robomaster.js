@@ -1,9 +1,10 @@
 import React from 'react';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Grid from '@material-ui/core/Grid';
-import { DroneCrash } from './DroneCrash';
 import { Details } from './Details';
 import { SectionContainer } from '../../generic/SectionContainer';
+import { ProjectImage } from '../../generic/ProjectImage';
+import droneCrash from '../../../images/drone_crash.gif';
 
 export const Robomaster = () => {
   const isXsScreen = useMediaQuery(theme => theme.breakpoints.only('xs'));
@@ -15,7 +16,7 @@ export const Robomaster = () => {
           <Details shouldAlignCenter={isXsScreen} />
         </Grid>
         <Grid item xs={12} sm={5} md={3} lg={4}>
-          <DroneCrash />
+          <ProjectImage src={droneCrash} alt={'drone crash'} />
         </Grid>
       </Grid>
     </SectionContainer>

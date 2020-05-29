@@ -1,8 +1,7 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import Image from 'material-ui-image';
-import droneCrash from '../../../images/drone_crash.gif';
-import { useScreen } from '../../../custom-hooks/useScreen';
+import MuiImage from 'material-ui-image';
+import { useScreen } from '../../custom-hooks/useScreen';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,17 +19,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const DroneCrash = () => {
+export const ProjectImage = ({ src, alt }) => {
   const classes = useStyles();
   const { isSmallScreen } = useScreen();
 
   return (
     <div className={classes.root}>
-      <Image
-        className={!isSmallScreen ? classes.gif : classes.smallGif}
-        src={droneCrash}
-        alt={'drone crash'}
-      />
+      <MuiImage className={!isSmallScreen ? classes.gif : classes.smallGif} src={src} alt={alt} />
     </div>
   );
 };
