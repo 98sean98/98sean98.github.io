@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import MuiImage from 'material-ui-image';
 import { useScreen } from '../../custom-hooks/useScreen';
@@ -22,10 +22,22 @@ const useStyles = makeStyles(theme => ({
 export const ProjectImage = ({ src, alt }) => {
   const classes = useStyles();
   const { isSmallScreen } = useScreen();
+  const [aspectRatio, setAspectRatio] = useState(1);
+
+  const img = new Image();
+  img.src = src;
+  img.onload = function() {
+    setAspectRatio(this.width / this.height);
+  };
 
   return (
     <div className={classes.root}>
-      <MuiImage className={!isSmallScreen ? classes.gif : classes.smallGif} src={src} alt={alt} />
+      <MuiImage
+        className={!isSmallScreen ? classes.gif : classes.smallGif}
+        src={src}
+        alt={alt}
+        aspectRatio={aspectRatio}
+      />
     </div>
   );
 };
