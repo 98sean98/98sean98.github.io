@@ -4,10 +4,11 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import { updateWindowSize } from './actions';
 import { Landing } from './components/landing/Landing';
 import { AboutMe } from './components/about-me/AboutMe';
-import { Robomaster } from './components/projects/robomaster/Robomaster';
-import { Footer } from './components/Footer';
 import { ContentDivider } from './components/generic/ContentDivider';
+import { Robomaster } from './components/projects/robomaster/Robomaster';
 import { Aerospace } from './components/projects/aerospace/Aerospace';
+import { SLS } from './components/projects/sls/SLS';
+import { Footer } from './components/Footer';
 
 const useStyles = makeStyles(() => ({
   app: {},
@@ -33,6 +34,8 @@ const App = ({ updateWindowSize }) => {
       <Robomaster />
       <ContentDivider />
       <Aerospace />
+      <ContentDivider />
+      <SLS />
       <Footer />
     </div>
   );
