@@ -45,6 +45,11 @@ export const Details = ({ shouldAlignCenter }) => {
           status at our beautifully curated website.
         </Typography>
         <Typography variant={'body2'} gutterBottom>
+          Credits to my roommate{' '}
+          <Link href={'https://www.linkedin.com/in/jaehun-lee-8b2a07193/'}>Jae Hun</Link> for the
+          footage.
+        </Typography>
+        <Typography variant={'body2'} gutterBottom>
           Key takeaway: some hallmates were really grateful
         </Typography>
       </div>
