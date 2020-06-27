@@ -41,18 +41,18 @@ export const Details = ({ shouldAlignCenter }) => {
           an academic year. Sure, my team and I faced many hardships in ways that were unimaginable:
           from multiple drone crashes, to failing electronics on most of our robots (most of the
           time), and from running out of funding to pay for our hotel during the competition, to not
-          having dinners pretty much every night because we had to work our ass off. It was not a
-          pleasant period of time, but I'm glad we some how made it to completing the minimum number
-          of matches we had to play, and even wining one of them despite the lack of operator
-          training. And every small bit of success was celebrated in the backdrop of failures we
-          had.
+          having dinners pretty much every night because we had to work our ass off fixing problems.
+          It was not a pleasant period of time, but I'm glad we some how made it to completing the
+          minimum number of matches we had to play, and even wining one of them despite the lack of
+          operator training. And every small bit of success was celebrated in the backdrop of
+          failures we had.
         </Typography>
         <Typography variant={'body1'} gutterBottom>
-          Yes, we did feel a bit ashamed for representing Hong Kong as the team from HKUST, which
-          won the international regionals and went head-to-head with most of the really strong
-          mainland teams. That being said, this has been an unforgettable experience, not to mention
-          I made some really good friends just by working together on robotics that we continue to
-          feel passionate about.
+          Yes, we did feel a bit ashamed for representing Hong Kong alongside the team from HKUST,
+          which won the international regionals and went head-to-head with most of the really strong
+          Mainland China teams. That being said, this has been an unforgettable experience, not to
+          mention I made some really good friends just by working together on robotics that we
+          continue to feel passionate about.
         </Typography>
         <ul>
           {points.map((point, index) => (
