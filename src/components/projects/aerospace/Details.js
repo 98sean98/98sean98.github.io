@@ -34,7 +34,7 @@ export const Details = ({ shouldAlignCenter }) => {
     `the rocket engine's exhaust velocity, and mass flow rate (fuel burn rate) are constants`,
     `the ratio of the final mass to the initial mass is 0.2`,
     `the burnout time is 5 seconds (for the purpose of animation)`,
-    `a reasonable function for angular displacement as a function of time is assumed to tilt the rocket`,
+    `a reasonable function for angular displacement with respect to time is assumed to tilt the rocket`,
     `gravitational acceleration remains constant, instead of decreasing due to rising altitude`,
   ];
 
@@ -46,8 +46,9 @@ export const Details = ({ shouldAlignCenter }) => {
       <div className={classes.section}>
         <Typography variant={'body1'}>
           Using Tsiolkovsky's rocket equation, and taking gravity into account, but ignoring air
-          resistance, I attempted to solve for the 2-dimensional displacements as functions of time.
-          Several strong assumptions had to be made to simplify a lot of the calculations.
+          resistance, I attempted to solve for the 2-dimensional displacements of a launching rocket
+          as functions of time. Several strong assumptions had to be made to simplify a lot of the
+          calculations.
         </Typography>
         <ul>
           {assumptions.map((assumption, index) => (
@@ -64,21 +65,22 @@ export const Details = ({ shouldAlignCenter }) => {
           <ExpansionPanelDetails>
             <div>
               <Typography variant={'body1'} gutterBottom>
-                I was able to find solutions to the velocity after postulating a linear time
-                function for angular displacement. Then, the velocity function is used to find the 2
-                displacement functions; and I stopped at relatively complicated definite integrals.
+                I was able to find solutions to the rocket's velocity after postulating a linear
+                time function for angular displacement. Then, the velocity function is used to find
+                the 2 displacement functions; and I stopped at relatively complicated definite
+                integrals.
               </Typography>
               <Typography variant={'body1'} gutterBottom>
                 Looking at the integrals made me rethink my approach: even if the solutions were
                 correct, I did't think the interpolation algorithm used by the animation library to
                 calculate the x, y, and angle attributes of the rocket could handle such complicated
                 computations within milliseconds. According to the documentation of the library,
-                interpolation should be completed quickly because the same calculations need to be
-                done for each finite increment of time. Thus, I had to opt for an approximate
-                solution using simple exponential and trigonometric functions; and it wasn't too
-                difficult to find what I needed; however, I had to optimise the function for angular
-                displacement to use an exponential function so that the rocket behaves a little
-                better.
+                interpolation should be completed "quickly" because the same calculations need to be
+                done for each finite increment of time (i.e. framerate). Thus, I had to opt for an
+                approximate solution using simple exponential and trigonometric functions; and it
+                wasn't too difficult to find what I needed; however, I had to optimise the function
+                for angular displacement to use an exponential function so that the rocket behaves a
+                little more naturally.
               </Typography>
               <Typography variant={'body1'} gutterBottom>
                 After that, I programmed the approximated solution into the animation algorithm. The

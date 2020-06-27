@@ -42,12 +42,12 @@ export const Details = ({ shouldAlignCenter }) => {
           This is where RC Tech club came together to modernise our machines by connecting it to the
           internet! In short, we have made an IoT device that would inform us the operating status
           of each machine. With this infrastructure installed, hallmates can now easily check the
-          status at our beautifully curated website.
+          availability of machines at our beautifully curated website.
         </Typography>
         <Typography variant={'body2'} gutterBottom>
           Credits to my roommate{' '}
           <Link href={'https://www.linkedin.com/in/jaehun-lee-8b2a07193/'}>Jae Hun</Link> for the
-          footage.
+          footage
         </Typography>
         <Typography variant={'body2'} gutterBottom>
           Key takeaway: some hallmates were really grateful
