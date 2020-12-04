@@ -9,7 +9,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Link from '@material-ui/core/Link';
 import clsx from 'clsx';
-import rocket_calculations from '../../../pdf/rocket_calculations.pdf';
+import { rocket_calculations } from '../../../pdf';
 
 const useStyles = makeStyles(theme => ({
   alignCenter: {

@@ -4,12 +4,15 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import { profile } from '../../siteConfig';
+import { resume } from '../../pdf';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -53,6 +56,7 @@ export const Profile = () => {
   const secondGroupDelay = delay * (children.length + 1);
   const thirdGroupDelay = secondGroupDelay + delay * 3;
   const fourthGroupDelay = thirdGroupDelay + delay;
+  const fifthGroupDelay = fourthGroupDelay + delay;
 
   return (
     <div className={classes.root}>
@@ -97,6 +101,18 @@ export const Profile = () => {
           ))}
         </Grid>
       </Fade>
+      <Zoom clear delay={fifthGroupDelay}>
+        <div className={classes.textBox}>
+          <Button
+            color="inherit"
+            startIcon={<LibraryBooksIcon />}
+            target={'_blank'}
+            rel={'noopener noreferrer'}
+            href={resume}>
+            Get My Resume
+          </Button>
+        </div>
+      </Zoom>
     </div>
   );
 };
