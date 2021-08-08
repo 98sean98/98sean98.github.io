@@ -41,13 +41,10 @@ const App = ({ updateWindowSize }) => {
   );
 };
 
-const mapState = state => ({});
+const mapState = (state) => ({});
 
-const mapDispatch = dispatch => ({
+const mapDispatch = (dispatch) => ({
   updateWindowSize: (width, height) => dispatch(updateWindowSize(width, height)),
 });
 
-export default connect(
-  mapState,
-  mapDispatch
-)(App);
+export default connect(mapState, mapDispatch)(App);

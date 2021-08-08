@@ -3,7 +3,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import Typography from '@material-ui/core/Typography';
 import MuiLink from '@material-ui/core/Link';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(2),
     background: theme.palette.primary.dark,
@@ -35,6 +35,9 @@ export const Footer = () => {
       </Typography>
       <Typography variant={'body2'} gutterBottom>
         This site is mobile friendly, and it adjusts itself based on device orientation.
+      </Typography>
+      <Typography variant={'caption'} gutterBottom>
+        Sean Chok 2021
       </Typography>
     </div>
   );
