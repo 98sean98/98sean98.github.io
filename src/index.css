@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@tailwind base;
 
-body {
-  margin: 0;
-  font-family: 'Noto Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  h1 {
+    @apply prose prose-2xl;
+  }
+  h2 {
+    @apply prose prose-xl;
+  }
+  h3 {
+    @apply prose prose-lg;
+  }
+  p {
+    @apply prose;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
+@tailwind components;
+@tailwind utilities;

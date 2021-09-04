@@ -4,27 +4,38 @@
   "private": false,
   "homepage": "https://98sean98.github.io",
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
-    "@material-ui/icons": "^4.11.2",
-    "clsx": "^1.1.1",
-    "d3-ease": "^3.0.1",
-    "material-ui-image": "^3.3.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-move": "^6.4.0",
-    "react-redux": "^7.2.4",
-    "react-reveal": "^1.2.2",
-    "react-scripts": "^4.0.3",
-    "redux": "^4.1.0"
+    "@craco/craco": "^6.2.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@tailwindcss/typography": "^0.4.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "emotion-icons": "^3.19.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "test:cicd": "craco test --watchAll=false",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && gh-pages -d build/ -r https://github.com/98sean98/98sean98.github.io.git -b master",
     "prepare": "husky install",
     "precommit": "pretty-quick --staged"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -39,9 +50,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0",
-    "husky": "^6.0.0",
-    "prettier": "2.3.1",
-    "pretty-quick": "^3.1.0"
+    "autoprefixer": "^9",
+    "husky": "^7.0.2",
+    "postcss": "^7",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

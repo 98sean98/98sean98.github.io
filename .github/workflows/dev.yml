@@ -19,5 +19,8 @@ jobs:
       - name: Install
         run: yarn install
 
+      - name: Test
+        run: yarn test:cicd
+
       - name: Build application
         run: yarn build
