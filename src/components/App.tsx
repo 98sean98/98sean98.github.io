@@ -10,7 +10,7 @@ function App() {
       className={
         'h-screen flex flex-col justify-center items-center px-4 md:px-8 py-8'
       }>
-      <div className={'mt-5 space-y-2'}>
+      <div className={'space-y-2'}>
         <Coffee size={32} color={colors.brand['500']} />
         <p>Hi, my website is undergoing some major updates.</p>
         <p>If you want to check out my stuff, you can find them here:</p>
