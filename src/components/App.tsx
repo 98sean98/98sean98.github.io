@@ -8,7 +8,7 @@ function App() {
       <div className="col-span-1 flex justify-center">
         <div className="w-full" style={{ maxWidth: '12rem' }}>
           <div className="relative w-full" style={{ paddingBottom: '100%' }}>
-            <div className="absolute inset-0 rounded-md overflow-hidden">
+            <div className="absolute inset-0 rounded-md shadow overflow-hidden">
               <img
                 src={ProfilePicture}
                 alt="profile"
