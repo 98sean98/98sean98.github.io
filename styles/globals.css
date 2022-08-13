@@ -13,10 +13,29 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+@media(prefers-color-scheme: dark) {
+  body {
+    /* Created with https://www.css-gradient.com */
+    background: #5D0D89;
+    background: -webkit-linear-gradient(top left, #5D0D89, #8050CA);
+    background: -moz-linear-gradient(top left, #5D0D89, #8050CA);
+    background: linear-gradient(to bottom right, #5D0D89, #8050CA);
+  }
+}
+
+@media(prefers-color-scheme: light) {
+  body {
+    /* Created with https://www.css-gradient.com */
+    background: #DFAEF4;
+    background: -webkit-linear-gradient(top left, #DFAEF4, #9478CA);
+    background: -moz-linear-gradient(top left, #DFAEF4, #9478CA);
+    background: linear-gradient(to bottom right, #DFAEF4, #9478CA);
+  }
+}
 
 @layer base {
   body {
-    @apply bg-gray-50 dark:bg-gray-900 text-slate-900 dark:text-slate-100;
+    @apply text-slate-900 dark:text-slate-100;
   }
   h1 {
     @apply prose prose-2xl font-semibold dark:prose-invert;
@@ -40,6 +59,6 @@ body {
     @apply prose prose-base dark:prose-invert;
   }
   a {
-    @apply prose prose-base text-teal-200 underline;
+    @apply prose prose-base underline text-rose-700 dark:text-sky-300;
   }
 }

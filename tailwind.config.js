@@ -1,4 +1,3 @@
-const colors = require('./theme/colors');
 
 module.exports = {
   content: [
@@ -7,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        ...colors,
-      },
     },
   },
   variants: {
