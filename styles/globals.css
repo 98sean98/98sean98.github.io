@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-slate-900 dark:text-slate-100;
+  }
+  h1 {
+    @apply prose prose-2xl font-semibold dark:prose-invert;
+  }
+  h2 {
+    @apply prose prose-xl dark:prose-invert;
+  }
+  h3 {
+    @apply prose prose-xl dark:prose-invert;
+  }
+  h4 {
+    @apply prose prose-lg dark:prose-invert;
+  }
+  h5 {
+    @apply prose prose-base font-bold dark:prose-invert;
+  }
+  h6 {
+    @apply prose prose-base font-semibold dark:prose-invert;
+  }
+  p {
+    @apply prose prose-base dark:prose-invert;
+  }
+  a {
+    @apply prose prose-base text-teal-200 underline;
+  }
+}

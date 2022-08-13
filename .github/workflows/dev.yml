@@ -14,13 +14,14 @@ jobs:
       - name: Setup nodejs
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Install
         run: yarn install
 
-      - name: Test
-        run: yarn test:cicd
-
       - name: Build application
         run: yarn build
+
+      - name: Export static files
+        run: yarn export
+        
