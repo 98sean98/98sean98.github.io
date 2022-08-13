@@ -1,24 +1,25 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <>
-  <Head>
-    <title>Hi I&#39;m Sean!</title>
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="author" content="Sean Chok" />
-    <meta
-      property="og:description"
-      content="A collective of stuff that Sean wants to put on display, in public, shamelessly."
-    />
-    <meta property="og:title" content="Hi, I'm Sean!" />
-    <meta property="og:image" content="%PUBLIC_URL%/og_image.jpg" />
-  </Head>
+  return (
+    <>
+      <Head>
+        <title>Hi I&#39;m Sean!</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Sean Chok" />
+        <meta
+          property="og:description"
+          content="A collective of stuff that Sean wants to put on display, in public, shamelessly."
+        />
+        <meta property="og:title" content="Hi, I'm Sean!" />
+        <meta property="og:image" content="%PUBLIC_URL%/og_image.jpg" />
+      </Head>
 
-   <Component {...pageProps} />
-  </>
-
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 
-import ProfilePic from '../assets/images/profile_pic.png'
+import ProfilePic from '../assets/images/profile_pic.png';
 
 const Home: NextPage = () => {
   return (
@@ -26,8 +26,9 @@ const Home: NextPage = () => {
         <div className="col-span-1 sm:col-span-2 lg:col-span-3">
           <h1>Hi, I&#39;m Sean Chok.</h1>
           <p>
-            I&#39;m a mechanical engineering student at the University of Hong Kong,
-            and I&#39;m involved in several robotics and software projects.
+            I&#39;m a mechanical engineering student at the University of Hong
+            Kong, and I&#39;m involved in several robotics and software
+            projects.
           </p>
 
           <div className="mt-4">
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
