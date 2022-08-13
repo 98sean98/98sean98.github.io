@@ -1,0 +1,63 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    /* Created with https://www.css-gradient.com */
+    background: #5d0d89;
+    background: -webkit-linear-gradient(top left, #5d0d89, #8050ca);
+    background: -moz-linear-gradient(top left, #5d0d89, #8050ca);
+    background: linear-gradient(to bottom right, #5d0d89, #8050ca);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    /* Created with https://www.css-gradient.com */
+    background: #dfaef4;
+    background: -webkit-linear-gradient(top left, #dfaef4, #9478ca);
+    background: -moz-linear-gradient(top left, #dfaef4, #9478ca);
+    background: linear-gradient(to bottom right, #dfaef4, #9478ca);
+  }
+}
+
+@layer base {
+  body {
+    @apply text-slate-900 dark:text-slate-100;
+  }
+  h1 {
+    @apply prose prose-2xl font-semibold dark:prose-invert;
+  }
+  h2 {
+    @apply prose prose-xl dark:prose-invert;
+  }
+  h3 {
+    @apply prose prose-xl dark:prose-invert;
+  }
+  h4 {
+    @apply prose prose-lg dark:prose-invert;
+  }
+  h5 {
+    @apply prose prose-base font-bold dark:prose-invert;
+  }
+  h6 {
+    @apply prose prose-base font-semibold dark:prose-invert;
+  }
+  p {
+    @apply prose prose-base dark:prose-invert;
+  }
+  a {
+    @apply prose prose-base underline text-rose-700 dark:text-sky-300;
+  }
+}
