@@ -34,30 +34,30 @@ body {
 
 @layer base {
   body {
-    @apply text-slate-900 dark:text-slate-100;
+    @apply text-violet-900 dark:text-pink-50;
   }
   h1 {
-    @apply prose prose-2xl font-semibold dark:prose-invert;
+    @apply text-4xl font-semibold;
   }
   h2 {
-    @apply prose prose-xl dark:prose-invert;
+    @apply text-3xl;
   }
   h3 {
-    @apply prose prose-xl dark:prose-invert;
+    @apply text-2xl;
   }
   h4 {
-    @apply prose prose-lg dark:prose-invert;
+    @apply text-xl;
   }
   h5 {
-    @apply prose prose-base font-bold dark:prose-invert;
+    @apply text-lg font-bold;
   }
   h6 {
-    @apply prose prose-base font-semibold dark:prose-invert;
+    @apply text-lg font-semibold;
   }
   p {
-    @apply prose prose-base dark:prose-invert;
+    @apply text-base;
   }
   a {
-    @apply prose prose-base underline text-rose-700 dark:text-sky-300;
+    @apply underline text-rose-600 dark:text-sky-400;
   }
 }

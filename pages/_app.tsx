@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Sean Chok" />
         <meta
           property="og:description"
-          content="A collective of stuff that Sean wants to put on display, in public, shamelessly."
+          content="Sean's shameless collection of random stuff"
         />
         <meta property="og:title" content="Hi, I'm Sean!" />
         <meta property="og:image" content="%PUBLIC_URL%/og_image.jpg" />
