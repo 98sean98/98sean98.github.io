@@ -3,6 +3,44 @@ import React, { FC } from 'react';
 import Content from './content';
 import TowngasPic from '../assets/images/towngas_video_pig.jpeg';
 import RobomasterPic from '../assets/images/robomaster_drone.jpeg';
+import WheeltecPic from '../assets/images/wheeltec_robot.jpeg';
+
+const WheeltecDescription: FC = () => {
+  return (
+    <div>
+      <h2>Autonomous exploration robots</h2>
+
+      <p className={'mt-4'}>
+        This is my final year project as part of my mechanical engineering
+        degree. I worked with 2 others to develop an algorithm that controls a
+        fleet of robots to explore an unknown environment to build a map.
+      </p>
+
+      <div className={'mt-4'}>
+        <p>The key idea is to</p>
+        <ul className={'list-disc list-inside'}>
+          <li>
+            detect frontier points, which are boundaries between known and
+            unknown space on the currently known map
+          </li>
+          <li>select a frontier point for each robot to navigate towards</li>
+          <li>
+            on the path to the target frontier point, each robot scans its
+            environment and updates its map
+          </li>
+          <li>
+            after reaching the target frontier point, the procedure repeats
+            until a sufficiently built map is obtained
+          </li>
+          <li>
+            each robot builds a map of its own, and the maps are merged together
+            in real time
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 const TowngasDescription: FC = () => {
   return (
@@ -14,7 +52,7 @@ const TowngasDescription: FC = () => {
         known as Towngas) during my university gap year. This was where I learnt
         that engineering in practice is actually more challenging than I
         thought. On top of delivering projects on deadlines, I had to manage my
-        relationships with my colleagues and bosses.
+        relationships with my colleagues and managers.
       </p>
 
       <div className={'mt-4'}>
@@ -73,6 +111,8 @@ const WhatIUsedToWorkOn: FC = () => {
     <div>
       <h1>What I used to bang my head around for</h1>
       <div className={'mt-12 space-y-8'}>
+        <Content image={WheeltecPic} content={<WheeltecDescription />} />
+
         <Content image={TowngasPic} content={<TowngasDescription />} />
 
         <Content image={RobomasterPic} content={<RobomasterDescription />} />
