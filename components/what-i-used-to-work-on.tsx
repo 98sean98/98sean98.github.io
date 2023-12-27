@@ -4,16 +4,51 @@ import Content from './content';
 import TowngasPic from '../assets/images/towngas_video_pig.jpeg';
 import RobomasterPic from '../assets/images/robomaster_drone.jpeg';
 import WheeltecPic from '../assets/images/wheeltec_robot.jpeg';
+import DeploifaiPic from '../assets/images/deploifai.png';
 
-const WheeltecDescription: FC = () => {
+const DeploifaiDescription: FC = () => {
+  return (
+    <div>
+      <h2>Deploifai</h2>
+      <p className={'mt-4'}>
+        I was a co-founder and the Head of Engineering of an MLOps startup
+        that&#39;s based in HKU since June 2021. Our platform helps ML teams
+        manage their cloud infrastructure during their ML project lifecycle. We
+        provided services to connect different cloud solutions together to
+        provide data storage, training servers, experiments, and deployments for
+        ML.
+      </p>
+
+      <div className={'mt-4'}>
+        <p> My role at the company included</p>
+        <ul className={'list-disc list-inside'}>
+          <li>
+            planning and coordinating engineering milestones and sprint tasks
+            with team members
+          </li>
+          <li>
+            designing developer tools and engineering solutions to use cloud
+            technologies for MLOps
+          </li>
+          <li>
+            creating and maintaining a Kubernetes cluster to host all
+            applications and services through Terraform and Helm charts
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const FYPDescription: FC = () => {
   return (
     <div>
       <h2>Autonomous exploration robots</h2>
 
       <p className={'mt-4'}>
-        This is my final year project as part of my mechanical engineering
+        This was my final year project as part of my mechanical engineering
         degree. I worked with 2 others to develop an algorithm that controls a
-        fleet of robots to explore an unknown environment to build a map.
+        small group of robots to explore an unknown environment to build a map.
       </p>
 
       <div className={'mt-4'}>
@@ -98,7 +133,7 @@ const RobomasterDescription: FC = () => {
         and made great memories.
       </p>
 
-      <p className={'mt-4'}>
+      <p className={'mt-4 text-xs'}>
         Note to self: if I ever doubt my love for robotics, just look at this
         picture.
       </p>
@@ -110,8 +145,10 @@ const WhatIUsedToWorkOn: FC = () => {
   return (
     <div>
       <h1>What I used to bang my head around for</h1>
-      <div className={'mt-12 space-y-8'}>
-        <Content image={WheeltecPic} content={<WheeltecDescription />} />
+      <div className={'mt-12 space-y-12'}>
+        <Content image={DeploifaiPic} content={<DeploifaiDescription />} />
+
+        <Content image={WheeltecPic} content={<FYPDescription />} />
 
         <Content image={TowngasPic} content={<TowngasDescription />} />
 
