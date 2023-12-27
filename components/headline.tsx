@@ -8,12 +8,17 @@ const Introduction: FC = () => {
     <div>
       <h1>Hi, I&#39;m Sean Chok</h1>
       <p className={'mt-4'}>
-        I&#39;m a mechanical engineering student at the University of Hong Kong,
-        and I&#39;m involved in a few robotics and software projects.
+        I graduated from the University of Hong Kong with a Bachelor of
+        Engineering in Mechanical Engineering and a minor in Computer Science.
+        I&#39;m currently looking for a full-time opportunity as a robotics
+        engineer or software engineer.
       </p>
 
       <div className="mt-4">
-        <p>If you want to check out my work, you can find them here:</p>
+        <p>
+          If you want to take a look at previous my work, you can find them
+          here:
+        </p>
 
         <ul className="list-disc list-inside">
           <li>
@@ -35,6 +40,15 @@ const Introduction: FC = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="mt-4">
+        <p>
+          Feel free to own a copy of my CV:{' '}
+          <a href={'/seanchok_cv.pdf'} download>
+            seanchok_cv.pdf
+          </a>
+        </p>
       </div>
     </div>
   );

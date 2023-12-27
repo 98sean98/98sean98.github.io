@@ -9,10 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Hi I&#39;m Sean!</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Sean Chok" />
-        <meta
-          property="og:description"
-          content="Sean's shameless collection of random stuff"
-        />
+        <meta property="og:description" content="Sean's personal website" />
         <meta property="og:title" content="Hi, I'm Sean!" />
         <meta property="og:image" content="%PUBLIC_URL%/og_image.jpg" />
       </Head>
